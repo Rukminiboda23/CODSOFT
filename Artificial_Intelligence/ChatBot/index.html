@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rule-Based Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="preChatInfo">
+      <div class="fade-item delay-1">
+        <h1>Rule-Based Chatbot</h1>
+      </div>
+
+      <div class="fade-item delay-2">
+        <p>Welcome to our chatbot! Click the chat button below to start chatting.</p>
+      </div>
+
+      <div class="fade-item delay-3" id="chat-info">
+        <h2>💬 Meet Your Smart Chatbot!</h2>
+        <p>Need quick info? I’m designed to help you with common questions using simple, rule-based logic 🤖.</p>
+        <p>Feel free to ask me about :<br>
+          <strong style="color: #2e2ef4;">Time</strong>, 
+          <strong style="color: #2e2ef4;">Weather</strong>, 
+          or enjoy a fun <strong style="color: #2e2ef4;">Joke</strong> or 
+          <strong style="color: #2e2ef4;">Quote</strong>!
+        </p>
+      </div>
+    </div>
+
+    <!-- Chat Button -->
+    <button id="chat-toggle" class="fade-item delay-4">💬</button>
+
+    <!-- Pre-chat message -->
+    <div id="pre-chat-info" class="fade-item delay-5">
+      💡 Need help? Click the chat button below to talk to our assistant!
+    </div>
+
+    <!-- Chat Widget -->
+    <div id="chat-widget" class="chat-container">
+      <header>
+        <h2>🤖 ChatBot 1.0 <span id="close-btn">❌</span></h2>
+      </header>
+
+      <main id="chatbox"></main>
+      
+      <footer id="userInput">
+        <input type="text" id="input" placeholder="Type your message..." />
+        <button id="send">Send</button>
+      </footer>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
